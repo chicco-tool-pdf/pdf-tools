@@ -1,12 +1,65 @@
-<h2>Unisci PDF</h2>
+<h2 style="text-align:center;">Unisci PDF</h2>
 
-<label>File 1:</label>
-<input type="file" id="pdf1" accept="application/pdf"><br><br>
+<div class="container">
+    <label>File 1:</label>
+    <input type="file" id="pdf1" accept="application/pdf"><br><br>
 
-<label>File 2:</label>
-<input type="file" id="pdf2" accept="application/pdf"><br><br>
+    <label>File 2:</label>
+    <input type="file" id="pdf2" accept="application/pdf"><br><br>
 
-<label>File 3 (opzionale):</label>
-<input type="file" id="pdf3" accept="application/pdf"><br><br>
+    <label>File 3 (opzionale):</label>
+    <input type="file" id="pdf3" accept="application/pdf"><br><br>
 
-<button onclick="mergePDFs()">Unisci</button>
+    <button onclick="mergePDFs()">Unisci</button>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        margin-top: 40px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(6px);
+        width: 350px;
+        margin: 40px auto;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    input[type="file"] {
+        width: 100%;
+    }
+
+    button {
+        background-color: #0078ff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 18px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #005fcc;
+    }
+</style>

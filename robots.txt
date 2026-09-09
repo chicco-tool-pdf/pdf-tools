@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chicco-tool-pdf.github.io/pdf-tools/sitemap.xml
